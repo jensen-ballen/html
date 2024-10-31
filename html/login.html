@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HTML-AdsoT</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/sena.png" alt="Logo_sena">
+        <h1 class="titulo">Bienvenido al Taller de HTML Adso tarde</h1>
+    </header>
+    
+    <main class="contenedor sombra">
+        <form name="form" action="index.html" class="formulario">
+            <fieldset>
+                <legend>Iniciar Sesión</legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Usuario: </label>
+                        <input class="input-text" type="text" name="login" required>
+                    </div>
+                    <div class="campo">
+                        <label>Contraseña: </label>
+                        <input class="input-text" type="password" name="password" required>
+                    </div>
+                    <div>
+                        <input onclick="go()" type="button" value="Acceder" class="boton">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <script>
+        function go() {
+            if (document.form.password.value == 'Contraseña' && document.form.login.value == 'Usuario') {
+                document.form.submit();
+            }
+            else {
+                alert("Por favor ingrese usuario y contraseña válidos");
+            }
+        }
+    </script>
+
+    <footer>
+        <i>Todos los derechos reservados, Jensen Ballen Banguera</i>
+    </footer>
+</body>
+</html>
