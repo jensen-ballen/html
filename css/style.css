@@ -46,7 +46,7 @@ h3 {
     text-align: center;
 }
 
-p {}
+/*p {}*/
 
 
 
@@ -256,13 +256,13 @@ span {
     align-items: center;
 }
 
-.servicio h2 {}
+/*.servicio h2 {}*/
 
 .servicio p {
     line-height: 2;
 }
 
-.iconos {}
+/*.iconos {}*/
 
 .campo textarea{
     height: 20rem;
