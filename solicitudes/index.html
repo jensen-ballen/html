@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="solicitudes.css">
+    <title>Solicitudes</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Hermes</h1>
+            <nav>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Usuarios</li>
+                    <li>Equipos</li>
+                    <li>Solicitudes</li>
+                    <li>Reservas</li>
+                    <li>Autorizar</li>
+                    <li>Devoluciones</li>
+                    <li>Salidas</li>
+                    <li>Reportes</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h2>Solicitudes</h2>
+                <div class="stats">
+                    <div>Portátiles: 630</div>
+                    <div>Video Beam: 380</div>
+                    <div>Televisores: 250</div>
+                    <div>Equipos: 213</div>
+                </div>
+            </header>
+            <section class="equipos">
+                <h3>Equipos</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descripción</th>
+                            <th>Disponible</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portátil</td>
+                            <td>10</td>
+                            <td><button>Agregar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Video Beam</td>
+                            <td>10</td>
+                            <td><button>Agregar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Televisor</td>
+                            <td>10</td>
+                            <td><button>Agregar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Cabina</td>
+                            <td>10</td>
+                            <td><button>Agregar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="solicitud">
+                <h3>Solicitud</h3>
+                <div class="request-list">
+                    <div>Descripción: Portátil <button>-</button><button>+</button></div>
+                    <div>Descripción: Video Beam <button>-</button><button>+</button></div>
+                    <div>Descripción: Cable HDMI <button>-</button><button>+</button></div>
+                </div>
+                <textarea placeholder="Observaciones"></textarea>
+                <button class="cancel">Cancelar</button>
+                <button class="accept">Aceptar</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
